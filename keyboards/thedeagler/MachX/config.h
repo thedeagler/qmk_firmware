@@ -1,5 +1,4 @@
-#ifndef CONFIG_H
-#define CONFIG_H
+#pragma once
 
 #include "config_common.h"
 
@@ -7,13 +6,13 @@
 #define VENDOR_ID       0xFEED
 #define PRODUCT_ID      0x6060
 #define DEVICE_VER      0x0001
-#define MANUFACTURER    qmkbuilder
-#define PRODUCT         keyboard
-#define DESCRIPTION     Keyboard
+#define MANUFACTURER    thedeagler
+#define PRODUCT         MachX
+#define DESCRIPTION     Mech with a Mac layout
 
 /* key matrix size */
-#define MATRIX_ROWS 6
-#define MATRIX_COLS 14
+#define MATRIX_ROWS 7
+#define MATRIX_COLS 15
 
 /* key matrix pins */
 #define MATRIX_ROW_PINS { D5, F0, F1, F4, F5, F6, F7 }
@@ -29,12 +28,13 @@
 #define DIODE_DIRECTION COL2ROW
 
 /* number of backlight levels */
-#ifdef BACKLIGHT_PIN
-#define BACKLIGHT_LEVELS 0
-#endif
+// #define BACKLIGHT_PIN B7
+// #ifdef BACKLIGHT_PIN
+// #define BACKLIGHT_LEVELS 0
+// #endif
 
 /* Set 0 if debouncing isn't needed */
-#define DEBOUNCING_DELAY 5
+#define DEBOUNCE 5
 
 /* Mechanical locking support. Use KC_LCAP, KC_LNUM or KC_LSCR instead in keymap */
 #define LOCKING_SUPPORT_ENABLE
@@ -43,26 +43,17 @@
 #define LOCKING_RESYNC_ENABLE
 
 /* key combination for command */
+/*
 #define IS_COMMAND() ( \
     keyboard_report->mods == (MOD_BIT(KC_LSHIFT) | MOD_BIT(KC_RSHIFT)) \
 )
+*/
 
 /* prevent stuck modifiers */
-#define PREVENT_STUCK_MODIFIERS
+// #define PREVENT_STUCK_MODIFIERS
 
 /* Mousekey options */
 #define MOUSEKEY_WHEEL_DELAY 0
 #define MOUSEKEY_WHEEL_INTERVAL	8
 #define MOUSEKEY_WHEEL_MAX_SPEED 1
 #define MOUSEKEY_WHEEL_TIME_TO_MAX 0
-
-
-#ifdef RGB_DI_PIN
-#define RGBLIGHT_ANIMATIONS
-#define RGBLED_NUM 0
-#define RGBLIGHT_HUE_STEP 8
-#define RGBLIGHT_SAT_STEP 8
-#define RGBLIGHT_VAL_STEP 8
-#endif
-
-#endif
