@@ -90,6 +90,16 @@ void encoder_update_user(uint8_t index, bool clockwise) {
     // }
 }
 
+void dip_switch_update_mask_user(uint32_t state) { 
+    if (state & (1UL<<0) && state & (1UL<<1)) {
+        uprintf("middle\n");
+    } else if (state & (1UL<<0)) {
+		uprintf("up\n");
+	} else if (state & (1UL<<1)) {
+		uprintf("down\n");
+	}
+}
+
 void led_set_user(uint8_t usb_led) {
 
 	if (usb_led & (1 << USB_LED_NUM_LOCK)) {
