@@ -20,9 +20,9 @@
 #define UNUSED_PINS
 
 /* rotary encoder support */
-#define ENCODERS_PAD_A { D0 }
-#define ENCODERS_PAD_B { D1 }
-#define ENCODER_RESOLUTION 4
+// #define ENCODERS_PAD_A { D0 }
+// #define ENCODERS_PAD_B { D1 }
+// #define ENCODER_RESOLUTION 2
 
 /* COL2ROW or ROW2COL */
 #define DIODE_DIRECTION COL2ROW
