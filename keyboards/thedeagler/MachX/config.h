@@ -25,7 +25,7 @@
 // #define ENCODER_RESOLUTION 2
 
 /* dip switch support */
-#define DIP_SWITCH_PINS { D1, B1 }
+// #define DIP_SWITCH_PINS { D1, B1 }
 
 /* COL2ROW or ROW2COL */
 #define DIODE_DIRECTION COL2ROW

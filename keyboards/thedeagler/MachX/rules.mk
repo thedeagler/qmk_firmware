@@ -55,4 +55,4 @@ BACKLIGHT_ENABLE ?= no  # Enable keyboard backlight functionality
 AUDIO_ENABLE ?= no
 RGBLIGHT_ENABLE ?= no
 # ENCODER_ENABLE ?= yes
-DIP_SWITCH_ENABLE ?= yes
+# DIP_SWITCH_ENABLE ?= yes
