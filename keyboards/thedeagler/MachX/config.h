@@ -72,5 +72,6 @@ Green: D0
 /* RGB Underglow */
 #define RGBLIGHT_ANIMATIONS
 #define RGB_DI_PIN B1
-// #define RGBLED_NUM 30
 #define DRIVER_LED_TOTAL 30
+#define RGB_MATRIX_LED_PROCESS_LIMIT 6
+#define RGB_MATRIX_LED_FLUSH_LIMIT 5
