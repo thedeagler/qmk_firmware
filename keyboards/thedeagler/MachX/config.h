@@ -2,6 +2,14 @@
 
 #include "config_common.h"
 
+/*
+Brown: f7
+Red: B0
+Orange: B1
+Yellow: D1
+Green: D0
+*/
+
 /* USB Device descriptor parameter */
 #define VENDOR_ID       0xFEED
 #define PRODUCT_ID      0x6060
@@ -60,3 +68,9 @@
 #define MOUSEKEY_WHEEL_INTERVAL	8
 #define MOUSEKEY_WHEEL_MAX_SPEED 1
 #define MOUSEKEY_WHEEL_TIME_TO_MAX 0
+
+/* RGB Underglow */
+#define RGBLIGHT_ANIMATIONS
+#define RGB_DI_PIN B1
+// #define RGBLED_NUM 30
+#define DRIVER_LED_TOTAL 30

@@ -21,7 +21,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 		KC__MUTE),
 
 	KEYMAP(
-		KC_ESC, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, 
+		KC_ESC, RGB_MODE_RAINBOW, RGB_MODE_SWIRL, RGB_TOG, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, RGB_VAD, RGB_VAI, KC_TRNS, KC_TRNS, KC_TRNS, 
 		KC_TRNS, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_F11, KC_F12, KC_DELETE, 
 		KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, 
 		KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_MS_WH_DOWN, KC_MS_WH_UP, KC_TRNS, KC_TRNS, KC_TRNS, OSL(3), 
@@ -90,15 +90,15 @@ void encoder_update_user(uint8_t index, bool clockwise) {
     // }
 }
 
-void dip_switch_update_mask_user(uint32_t state) { 
-    if (state & (1UL<<0) && state & (1UL<<1)) {
-        uprintf("middle\n");
-    } else if (state & (1UL<<0)) {
-		uprintf("up\n");
-	} else if (state & (1UL<<1)) {
-		uprintf("down\n");
-	}
-}
+// void dip_switch_update_mask_user(uint32_t state) { 
+//     if (state & (1UL<<0) && state & (1UL<<1)) {
+//         uprintf("middle\n");
+//     } else if (state & (1UL<<0)) {
+// 		uprintf("up\n");
+// 	} else if (state & (1UL<<1)) {
+// 		uprintf("down\n");
+// 	}
+// }
 
 void led_set_user(uint8_t usb_led) {
 
