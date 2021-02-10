@@ -44,16 +44,16 @@ OPT_DEFS += -DBOOTLOADER_SIZE=4096
 # Build Options
 #   comment out to disable the options.
 #
-BOOTMAGIC_ENABLE ?= yes	# Virtual DIP switch configuration(+1000)
+BOOTMAGIC_ENABLE ?= no	# Virtual DIP switch configuration(+1000) https://beta.docs.qmk.fm/using-qmk/hardware-features/feature_bootmagic
 MOUSEKEY_ENABLE ?= yes	# Mouse keys(+4700)
 EXTRAKEY_ENABLE ?= yes	# Audio control and System control(+450)
-CONSOLE_ENABLE ?= yes	# Console for debug(+400)
+CONSOLE_ENABLE ?= no	# Console for debug(+400)
 COMMAND_ENABLE ?= no    # Commands for debug and configuration
 SLEEP_LED_ENABLE ?= no  # Breathing sleep LED during USB suspend
 NKRO_ENABLE ?= yes		# USB Nkey Rollover - if this doesn't work, see here: https://github.com/tmk/tmk_keyboard/wiki/FAQ#nkro-doesnt-work
 BACKLIGHT_ENABLE ?= no  # Enable keyboard backlight functionality
 AUDIO_ENABLE ?= no
-RGBLIGHT_ENABLE ?= no  # Underglow
-RGB_MATRIX_ENABLE = WS2812
+RGBLIGHT_ENABLE ?= no  # Underglow. To enable: uncomment next line; check config.h; check MachX.c
+# RGB_MATRIX_ENABLE = WS2812
 # ENCODER_ENABLE ?= yes  # Rotary Encoder
 # DIP_SWITCH_ENABLE ?= yes # Toggle switch
